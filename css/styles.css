@@ -133,7 +133,8 @@ span.logo-link {
     margin-left: 50px;
 }
 .kontakts {
-    display: block;
+    display: flex;
+    align-items: center;
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -147,6 +148,14 @@ span.logo-link {
     color: var(--accent-color);
 }
 
+.kontakts-icon {
+    fill: var(--secondary-text-color);
+    margin-right: 10px;
+}
+
+.kontakts-icon:hover {
+    fill: var(--accent-color);
+} 
 
 /* Hero */
 .hero {
@@ -264,6 +273,15 @@ button:focus {
     margin-right: 0;
 }
 
+.icons {
+    background-color: var(--secondery-background-color);
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+
 .features-title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -328,7 +346,7 @@ button:focus {
 }
 
 .team.list .list:nth-child(4) {
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 .team-title {
@@ -357,6 +375,22 @@ button:focus {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.team-social-links {
+    display: flex;
+    align-items: center;
+    margin: 16px 32px 30px 32px;
+}
+
+.social-links {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #188ce8;
+    text-decoration: none;
+}
+
 
 /* portfolio */
 .portfolio {

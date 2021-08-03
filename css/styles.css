@@ -6,6 +6,7 @@
     --primary-white-color: #FFFFFF;
     --secondery-background-color: #F5F4FA;
     --bg-color: #EEEEEE;
+    --color-icons: #AFB1B8;
 
 }
 /* Шапка */
@@ -124,15 +125,16 @@ span.logo-link {
     color: var(--accent-color);
 }
 
-.kontakts.list {
+/* contacts */
+.contacts.list {
     display: flex;
     margin-left: auto;
 }
 
-.kontakts.list .list + .list {
+.contacts.list .list + .list {
     margin-left: 50px;
 }
-.kontakts {
+.adress-contacts {
     display: flex;
     align-items: center;
     color: var(--secondary-text-color);
@@ -143,17 +145,18 @@ span.logo-link {
 
 }
 
-.kontakts:hover,
-.kontakts:focus {
+.adress-contacts:hover,
+.adress-contacts:focus {
     color: var(--accent-color);
 }
 
-.kontakts-icon {
+.contacts-icon {
     fill: var(--secondary-text-color);
     margin-right: 10px;
 }
 
-.kontakts-icon:hover {
+.contacts .adress-contacts:hover .contacts-icon,
+.contacts .adress-contacts:focus .contacts-icon {
     fill: var(--accent-color);
 } 
 
@@ -373,22 +376,34 @@ button:focus {
 
 .team-content {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
+}
+
+.team-icons {
+    fill: var(--color-icons);
+    background-color: var(--primary-white-color);
 }
 
 .team-social-links {
     display: flex;
-    align-items: center;
-    margin: 16px 32px 30px 32px;
+    list-style: none;
+    margin: 0 32px 30px 32px;
+    padding: 0;
+    justify-content: space-between
 }
 
 .social-links {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+}
+
+.team-social-links .social-links:hover svg {
     background-color: #188ce8;
-    text-decoration: none;
+    fill: var(--primary-white-color);
 }
 
 
@@ -483,14 +498,14 @@ footer {
     margin-bottom: 0;
 }
 
-.kontakts-list.footer {
+.contacts-list.footer {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
 }
 
-.kontakts-list.footer:hover,
-.kontakts-list.footer:focus {
+.contacts-list.footer:hover,
+.contacts-list.footer:focus {
     color: var(--accent-color);
 }
 

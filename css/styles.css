@@ -142,6 +142,9 @@ span.logo-link {
 .adress-contacts {
     display: flex;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--secondary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -182,7 +185,7 @@ span.logo-link {
     url("../images/Team.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     max-width: 1600px;
     min-height: 600px;
     margin-left: auto;
@@ -264,6 +267,7 @@ button:hover,
 button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* Features */
@@ -282,11 +286,13 @@ button:focus {
 }
 
 .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--secondery-background-color);
     width: 270px;
     height: 120px;
     border-radius: 4px;
-    padding: 25px 100px;
     margin-bottom: 30px;
 }
 
@@ -373,14 +379,14 @@ button:focus {
 }
 
 .list-text {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
 }
 
 .team-content {
-    padding-top: 30px;
-    padding-bottom: 16px;
+    padding: 30px 32px;
 }
 
 .team-icons {
@@ -390,7 +396,6 @@ button:focus {
 .team-social-links {
     display: flex;
     list-style: none;
-    margin: 0 32px 30px 32px;
     padding: 0;
     justify-content: space-between
 }
@@ -612,6 +617,7 @@ footer {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--primary-white-color);
     margin-top: 0;
     margin-bottom: 20px;
 }

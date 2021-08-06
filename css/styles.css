@@ -40,10 +40,6 @@ a {
     cursor: pointer;
 }
 
-a:focus {
-    outline: none;
-}
-
 .list {
     padding: 0;
     margin: 0;
